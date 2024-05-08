@@ -55,7 +55,8 @@ const apiKey = "0a57737e098a332f372d7efb3418f90d";
 form.addEventListener("submit", e => {
   e.preventDefault();
   let inputVal = input.value;
-
+  inputVal = inputVal.trim();
+  console.log(inputVal);
   //Comprobar si ya hay en la lista una ciudad
   const listItems = list.querySelectorAll(".ajax-section .city");
   const listItemsArray = Array.from(listItems);
